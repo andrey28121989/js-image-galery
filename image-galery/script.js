@@ -32,7 +32,7 @@ function setPhotos() {
 
 function enter(e) {
     if (e.keyCode === 13) {
-        getData(input.value);
+        getData(search.value);
     }
 }
 
@@ -46,3 +46,9 @@ const closeInput = e => {
 }
 
 closeButton.addEventListener("click", closeInput);
+
+const showImg = e => {
+  getData(search.value);
+}
+
+iconSearch.addEventListener("click", showImg);
