@@ -1,8 +1,9 @@
 .header{
   width: 100%;
-  
   border-bottom: 5px solid orange;
+  background-color: grey;
 }
+
 .wrapper {
   max-width: 91.43rem;
   margin: auto;
@@ -20,7 +21,6 @@
   font-size: 2.3rem;
   font-weight: 900;
 }
-
 
 .camera {
   width: 38px;
@@ -42,13 +42,42 @@
   border: 1px solid rgba(0, 0, 0, 0.25);
   padding: 8px 12px;
   border-radius: 25px;
+  outline: none;
   transition: all 0.30s ease-in-out;
   font-family: 'inter', sans-serif;
 }
 
+.button[type="reset"] {
+  position: absolute;
+  top: 11px;
+  bottom: 11px;
+  right: 40px;
+  border: 0;
+  display: none;
+  border-radius: 50%;
+  background-color: white;
+  transition: all 200ms;
+  outline: none;
+  opacity: 0.5;
+  
+}
+
+.button__img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.input:valid ~ .button[type="reset"] {
+  display: block;
+}  
+
 .svg__search {
   position: absolute;
-  right: 2px;
+  right: 0;
   top: 2px;
   padding: 8px;
   cursor: pointer;
@@ -57,7 +86,7 @@
 }
 
 .svg__search:hover {
-  background-color: orange;
+  background-color: rgb(251, 220, 161);
 }
 
 #search {
@@ -65,6 +94,10 @@
   height: 18px;
   text-align: center;
   display: block;
+}
+
+.main {
+  background-color: rgb(202,196,176);
 }
 
 .container__img {
@@ -78,6 +111,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
+  padding-bottom: 15px;
 }
 
 .img {
@@ -101,9 +135,9 @@
 .footer {
   margin: 0 auto;
   width: 100%; 
-  height: 48px;
+  height: 54px;
   border-top: 5px solid orange;
-  margin-top: 15px;
+  background-color: grey;
 }
 
 .footer__mem {
@@ -115,7 +149,7 @@
   align-items: center;
 
   color: white;
-  padding: 5px 0;
+  margin-top: 5px;
 }
 
 .footer a {

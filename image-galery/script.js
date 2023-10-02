@@ -38,3 +38,11 @@ function enter(e) {
 
 search.addEventListener('keydown', enter);
 
+
+const closeButton = document.querySelector('.button');
+
+const closeInput = e => {
+  search.value = '';
+}
+
+closeButton.addEventListener("click", closeInput);
