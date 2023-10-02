@@ -21,6 +21,12 @@
   font-weight: 900;
 }
 
+
+.camera {
+  width: 38px;
+  height: 38px;
+}
+
 .header__search {
   width: 350px;
   display: flex;
@@ -32,11 +38,12 @@
 .input {
   width: 100%;
   box-sizing: border-box;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: 1px solid rgba(0, 0, 0, 0.25);
   padding: 8px 12px;
   border-radius: 25px;
   transition: all 0.30s ease-in-out;
+  font-family: 'inter', sans-serif;
 }
 
 .svg__search {
@@ -81,6 +88,12 @@
   border-radius: 2px;
   cursor: pointer;
   margin-top: 15px;
+  transition: all 0.5s;
+}
+
+.img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s;
 }
 
 
