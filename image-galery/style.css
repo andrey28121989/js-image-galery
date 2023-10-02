@@ -48,8 +48,8 @@
 
 .svg__search {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 2px;
+  top: 2px;
   padding: 8px;
   cursor: pointer;
   border-radius: 15px;
@@ -61,8 +61,8 @@
 }
 
 #search {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   text-align: center;
   display: block;
 }
